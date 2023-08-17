@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+  border: 2px solid red; 
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
@@ -16,6 +17,7 @@ body {
 }
 
 .modal {
+
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -23,6 +25,7 @@ body {
 }
 
 .icon {
+
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -36,6 +39,7 @@ body {
 }
 
 .close-button {
+
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -51,18 +55,21 @@ body {
 }
 
 button {
+
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
 }
 
 button.continue {
+
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
 button.cancel {
+
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
@@ -71,17 +78,20 @@ button.cancel {
 /* SOLUTION: */
 
 .modal {
+
   display: flex;
   gap: 16px;
   padding: 16px;
 }
 
 .icon {
+
   /* this keeps the icon from getting smashed by the text */
   flex-shrink: 0;
 }
 /* header container should be wrapped around the button element as well in order for flex style to work */
 .header {
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
