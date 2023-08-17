@@ -37,10 +37,12 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: center space-between;
   gap: 52px;
+  margin: auto;
 }
 
 .info {
   max-width: 200px;
+  margin: auto;
 }

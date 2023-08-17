@@ -53,6 +53,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 8px;
+  flex-wrap:wrap;
 }
 
  ul {
@@ -60,17 +61,27 @@ ul {
   margin: 0;
   padding: 0;
   gap: 16px;
-  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
 } 
 
+.li {
+  flex-wrap: wrap;
+}
 
 .left, .right {
   display: flex;
   align-items: center;
   gap: 16px;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
 } 
 
-.right {
+/* .right {
   justify-content: flex-end;
+} */
+
+@media all {
+  
 }
