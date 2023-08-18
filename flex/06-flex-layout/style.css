@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -24,4 +24,60 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid yellow
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.content {
+  border: 25px solid blue;
+  flex: 2;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* .left-links,
+.right-links {
+  border: 2px solid green;
+  padding-left: 0;
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  text-decoration-line: none;
+} */
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 16px;
+}
+
+.footer {
+  margin-top: auto;
+  background: #eeeeee;
 }
